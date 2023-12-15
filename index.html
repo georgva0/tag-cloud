@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2a2b30">
+  <title>WS Tag Cloud</title>
+  <meta name="description"
+    content="A collection of word cloud visualisations based on tags assigned to the latest 20 articles published by various BBC World Service language services." />
+  <meta name="keywords" content="BBC, World Service, languages, tags, themes, topics, subjects" />
+  <meta name="author" content="Vlad Georgescu" />
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- food icons -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/organicfoodicons.css" /> -->
+  <!-- demo styles -->
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <!-- menu styles -->
+  <link rel="stylesheet" type="text/css" href="css/component.css" />
+  <script src="js/modernizr-custom.js"></script>
+</head>
+
+<body>
+  <!-- Main container -->
+  <div class="container">
+    <!-- Blueprint header -->
+    <header class="bp-header cf">
+      <div class="site-logo">
+        <!-- <div class="dummy-icon foodicon foodicon--coconut"></div> -->
+        <svg xmlns="http://www.w3.org/2000/svg" height="3em" width="3em" fill="#cecece" viewBox="0 0 640 512">
+          <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+          <path
+            d="M0 336c0 79.5 64.5 144 144 144H512c70.7 0 128-57.3 128-128c0-61.9-44-113.6-102.4-125.4c4.1-10.7 6.4-22.4 6.4-34.6c0-53-43-96-96-96c-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32C167.6 32 96 103.6 96 192c0 2.7 .1 5.4 .2 8.1C40.2 219.8 0 273.2 0 336z" />
+        </svg>
+        <h2 class="dummy-heading">WS Tag Cloud</h2>
+      </div>
+      <div class="bp-header__main">
+        <span class="bp-header__present">WS Tag Cloud <span class="bp-tooltip bp-icon bp-icon--about"
+            data-content="A collection of word cloud visualisations based on tags assigned to the latest 20 articles published by various BBC World Service language services."></span></span>
+        <h1 class="bp-header__title">WS news themes through article metadata</h1>
+
+      </div>
+    </header>
+    <button class="action action--open" aria-label="Open Menu"><span class="icon icon--menu"></span></button>
+    <nav id="ml-menu" class="menu">
+      <button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"></span></button>
+      <div class="menu__wrap">
+        <ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All languages">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">GLOBAL</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-1" aria-owns="submenu-1"
+              href="#">Africa</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-2" aria-owns="submenu-2"
+              href="#">Asia Central</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-3" aria-owns="submenu-3"
+              href="#">Asia Pacific</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4" aria-owns="submenu-4"
+              href="#">Asia South</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-5" aria-owns="submenu-5"
+              href="#">Europe</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-6" aria-owns="submenu-6"
+              href="#">Latin America</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-7" aria-owns="submenu-7"
+              href="#">Middle East</a></li>
+        </ul>
+        <!-- Submenu 1 -->
+        <ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Africa">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">AFRICA | ALL</a></li>
+
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Afaan Oromoo</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Amharic</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Afrique</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Hausa</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Igbo</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Gahuza</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Pidgin</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Somali</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Swahili</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Tigrinya</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Yoruba</a></li>
+
+        </ul>
+        <!-- Submenu 1-1 -->
+
+        <!-- Submenu 2 -->
+        <ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu"
+          aria-label="Asia Central">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">ASIA CENTRAL | ALL</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Kyrgyz</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Uzbek</a></li>
+        </ul>
+        <!-- Submenu 2-1 -->
+
+        <!-- Submenu 3 -->
+        <ul data-menu="submenu-3" id="submenu-3" class="menu__level" tabindex="-1" role="menu" aria-label="Grains">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">ASIA PACIFIC | ALL</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Burmese</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Chinese</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Indonesia</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Japanese</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Korean</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Thai</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Vietnamese</a></li>
+
+        </ul>
+        <!-- Submenu 3-1 -->
+        <ul data-menu="submenu-3-1" id="submenu-3-1" class="menu__level" tabindex="-1" role="menu"
+          aria-label="Promo Packs">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Starter Kit</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">The Essential 8</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bolivian Secrets</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Flour Packs</a></li>
+        </ul>
+        <!-- Submenu 4 -->
+        <ul data-menu="submenu-4" id="submenu-4" class="menu__level" tabindex="-1" role="menu"
+          aria-label="Mylk &amp; Drinks">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">ASIA SOUTH | ALL</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Bengali</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Gujarati</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Hindi</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Marathi</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nepali</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Pashto</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Punjabi</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Sinhala</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Tamil</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Telugu</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Urdu</a></li>
+          <!-- <li class="menu__item" role="menuitem"><a class="menu__link" data-submenu="submenu-4-1"
+              aria-owns="submenu-4-1" href="#">Selection</a></li> -->
+        </ul>
+        <!-- Submenu 4-1 -->
+        <ul data-menu="submenu-4-1" id="submenu-4-1" class="menu__level" tabindex="-1" role="menu"
+          aria-label="Selection">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Nut Mylk Packs</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Amino Acid Heaven</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Allergy Free</a></li>
+        </ul>
+        <ul data-menu="submenu-5" id="submenu-5" class="menu__level" tabindex="-1" role="menu" aria-label="Europe">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">EUROPE | ALL</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Azeri</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Russian</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Serbian</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Turkish</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Ukrainian</a></li>
+
+        </ul>
+
+        <ul data-menu="submenu-6" id="submenu-6" class="menu__level" tabindex="-1" role="menu" aria-label="Europe">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">LATIN AMERICA | ALL</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Mundo</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Brasil</a></li>
+        </ul>
+
+        <ul data-menu="submenu-7" id="submenu-7" class="menu__level" tabindex="-1" role="menu" aria-label="Europe">
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">MIDDLE EAST | ALL</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Arabic</a></li>
+          <li class="menu__item" role="menuitem"><a class="menu__link" href="#">Persian</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="content">
+      <iframe src='https://flo.uri.sh/visualisation/15712001/embed' title='Interactive or visual content'
+        class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;'
+        sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+      <!-- <div class="flourish-embed flourish-word-cloud" data-src="visualisation/15712001?525841">
+        <script src="https://public.flourish.studio/resources/embed.js"></script>
+      </div> -->
+      <!-- <p class="info">Please choose a category</p>
+      <!-- Ajax loaded content here -->
+    </div>
+  </div>
+  <!-- /view -->
+  <script src="https://kit.fontawesome.com/3db310abd8.js" crossorigin="anonymous"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/dataLoad.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function () {
+      var menuEl = document.getElementById('ml-menu'),
+        mlmenu = new MLMenu(menuEl, {
+          // breadcrumbsCtrl : true, // show breadcrumbs
+          // initialBreadcrumb : 'all', // initial breadcrumb text
+          backCtrl: false, // show back button
+          // itemsDelayInterval : 60, // delay between each menu item sliding animation
+          onItemClick: loaddataLoad // callback: item that doesn´t have a submenu gets clicked - onItemClick([event], [inner HTML of the clicked item])
+        });
+
+      // mobile menu toggle
+      var openMenuCtrl = document.querySelector('.action--open'),
+        closeMenuCtrl = document.querySelector('.action--close');
+
+      openMenuCtrl.addEventListener('click', openMenu);
+      closeMenuCtrl.addEventListener('click', closeMenu);
+
+      function openMenu() {
+        classie.add(menuEl, 'menu--open');
+        closeMenuCtrl.focus();
+      }
+
+      function closeMenu() {
+        classie.remove(menuEl, 'menu--open');
+        openMenuCtrl.focus();
+      }
+
+      // simulate grid content loading
+      var gridWrapper = document.querySelector('.content');
+
+      function loaddataLoad(ev, itemName) {
+        ev.preventDefault();
+
+        closeMenu();
+        gridWrapper.innerHTML = '';
+        classie.add(gridWrapper, 'content--loading');
+        setTimeout(function () {
+          classie.remove(gridWrapper, 'content--loading');
+          // gridWrapper.innerHTML = '<ul class="products">' + dataLoad[itemName] + '<ul>';
+          gridWrapper.innerHTML = dataLoad[itemName];
+
+        }, 400);
+      }
+    })();
+  </script>
+</body>
+
+</html>
