@@ -42,6 +42,7 @@
 	left: 0;
 	width: 300px;
 	height: calc(100vh - 120px);
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 	background: #1c1d22;
 }
 
@@ -81,7 +82,9 @@
 }
 
 .menu__link {
-	font-weight: 600;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.4;
 	position: relative;
 	display: block;
 	padding: 1em 2.5em 1em 1.5em;
