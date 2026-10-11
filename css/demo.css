@@ -1,15 +1,18 @@
 /* General Blueprint Style */
 
 @font-face {
-  font-family: 'bpicons';
+  font-family: "bpicons";
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/bpicons/bpicons.eot');
-  src: url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'), url('../fonts/bpicons/bpicons.woff') format('woff'), url('../fonts/bpicons/bpicons.ttf') format('truetype'), url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+  src: url("../fonts/bpicons/bpicons.eot");
+  src:
+    url("../fonts/bpicons/bpicons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/bpicons/bpicons.woff") format("woff"),
+    url("../fonts/bpicons/bpicons.ttf") format("truetype"),
+    url("../fonts/bpicons/bpicons.svg#bpicons") format("svg");
 }
 
 /* Made with http://icomoon.io/ */
-
 
 /* Resets */
 
@@ -19,12 +22,11 @@
   box-sizing: border-box;
 }
 
-
 /* Helper classes */
 
 .cf:before,
 .cf:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 
@@ -32,11 +34,12 @@
   clear: both;
 }
 
-
 /* Main styles */
 
 body {
-  font-family: 'Avenir Next', Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family:
+    "Avenir Next", Avenir, "Helvetica Neue", "Lato", "Segoe UI", Helvetica,
+    Arial, sans-serif;
   overflow: hidden;
   margin: 0;
   color: #cecece;
@@ -59,7 +62,6 @@ a:hover {
   overflow-y: auto;
   height: 100vh;
 }
-
 
 /* Blueprint header */
 
@@ -137,7 +139,7 @@ a:hover {
   border-radius: 50%;
 }
 
-.bp-nav__item>span {
+.bp-nav__item > span {
   display: none;
 }
 
@@ -159,7 +161,7 @@ a:hover {
 }
 
 .bp-icon:after {
-  font-family: 'bpicons';
+  font-family: "bpicons";
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
@@ -185,23 +187,23 @@ a:hover {
 }
 
 .bp-icon--next:after {
-  content: '\e000';
+  content: "\e000";
 }
 
 .bp-icon--drop:after {
-  content: '\e001';
+  content: "\e001";
 }
 
 .bp-icon--archive:after {
-  content: '\e002';
+  content: "\e002";
 }
 
 .bp-icon--about:after {
-  content: '\e003';
+  content: "\e003";
 }
 
 .bp-icon--prev:after {
-  content: '\e004';
+  content: "\e004";
 }
 
 .site-logo {
@@ -230,6 +232,10 @@ a:hover {
   position: relative;
   min-height: 300px;
   margin: 0 0 0 300px;
+}
+
+.content > .flourish-embed-iframe {
+  height: 80vh !important;
 }
 
 .content--loading {
@@ -300,6 +306,10 @@ body #cdawrap a:hover.carbon-poweredby {
 
   .content {
     margin: 0;
+  }
+
+  .content > .flourish-embed-iframe {
+    height: 600px !important;
   }
 
   body,
